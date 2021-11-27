@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+:root {
+  --color1: #2A0944;
+  --color2: #3B185F;
+  --color3: #A12568;
+  --color4: #FEC260;
+  --color5: #000000;
+  --color6: #FF5F7E;
+}
+
+.App {
+  height: 100vh;
+  background-color: #0d1116;
+  overflow: scroll;
+  text-align: center;
+  font-family: 'Sigmar One', cursive;
+}
+
+.container {
+  height: 100%;
+  background: repeating-radial-gradient(circle at center, var(--color1) 0, var(--color3), var(--color2) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-container {
+  padding-top: 30px;
+}
+
+.header {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--color4);
+}
+
+.sub-text {
+  font-size: 35px;
+  color: var(--color6);
+  margin: 0 0 10px 0;
+}
+
+.content-container {
+  background-color: #a200d6;
+}
+
+
+.cta-button {
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.connect-wallet-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 550px;
+}
+
+
+/*
+
+.connect-wallet-button {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+}
+*/
+
+.mint-button {
+  background: -webkit-linear-gradient(left, #a200d6, #ff6fdf);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-right: 15px;
+}
+
+.opensea-button {
+  background-color: rgb(32, 129, 226);
+}
+
+.mint-count {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.twitter-logo {
+  width: 35px;
+  height: 35px;
+  filter: hue-rotate(90deg);
+}
+
+.footer-text {
+  color: var(--color1);
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: 'Exo', sans-serif;
+  text-decoration: none;
+}
+
+.footer-text:hover {
+  color: var(--color4);
+
+}
+
+/* KeyFrames */
+@-webkit-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+#connectbutton {
+  text-align: center;
+  line-height: 16px;
+  font-family: 'Exo', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  width: auto;
+  height: 5vh;
+  border: 1px solid var(--color1);
+  border-radius: 2%;
+  color: var(--color6);
+  background-color: var(--color2);
+  box-shadow: 0.6em 0.6em 2em 0.5em var(--color1), 0 0 0.4em 0.4em var(--color1); 
+  transition: color .3s, background-color .2s, box-shadow .25s; /* Animation */
+}
+
+#connectbutton:hover {
+  color: var(--color4);
+  background-color: var(--color1);
+  box-shadow: 0 0 0.4em 0.4em var(--color4); 
+}
+
+#connectbutton:active {
+  color: var(--color3);
+  background-color: var(--color1);
+  box-shadow: 0 0 0.4em 0.4em var(--color4); 
+}
+
+.gif {
+  border-radius: 10%;
+  box-shadow: 0 0 2em 2em var(--color3); 
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
